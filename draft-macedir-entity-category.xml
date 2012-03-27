@@ -19,11 +19,11 @@
       </address>
     </author>
 
-    <date day="14" month="March" year="2012" />
+    <date day="26" month="March" year="2012" />
 
     <abstract>
       <t>This document describes a SAML entity attribute which can be used to
-      assign a category semantics to an entity.</t>
+      assign category membership semantics to an entity.</t>
     </abstract>
 
     <note title="Requirements Language">
@@ -36,13 +36,13 @@
 
   <middle>
     <section title="Introduction and Motivation">
-      <t>This document describes an attribute for use by the EntityAttribute
+      <t>This document describes an attribute for use with the EntityAttribute
       extension to SAML metadata (denoted "entity category attribute" below).
       The entity category attribute is used to denote the type or category of
-      the SAML entity with wich the attribute is associated.</t>
+      the SAML entity with which the attribute is associated.</t>
 
       <t>The category of an entity MAY be used to provision policy for release
-      of attributes from an Identity Provider but other uses is also possible.
+      of attributes from an Identity Provider but other uses are also possible.
       This document only specifies syntax and semantics for the attribute, it
       does not specify a controlled vocabulary for the attribute values. It is
       expected that other specifications will provide management and discovery
@@ -53,13 +53,13 @@
       <t>When asserted in SAML metadata the entity category attribute MUST be
       represented using an Attribute element with @NameFormat
       urn:oasis:names:tc:SAML:2.0:attrname-format:uri and @Name
-      http://macedir.org/entity-category. The Entity Category attribute MAY
+      http://macedir.org/entity-category. The entity category attribute MAY
       contain multiple AttributeValue elements. A single EntityAttributes
       element MUST NOT contain multiple separate Attribute elements for the
       same attribute type and instead such cases MUST be represented as
-      mutiple AttributeValue type.</t>
+      mutiple AttributeValue elements.</t>
 
-      <t>The AttributeValue element MUST contain a URI. The URI provides a
+      <t>Each AttributeValue element MUST contain a URI. The URI provides a
       unique identifier of the entity category. This document does not specify
       how such values are discovered but future versions of this specification
       may reference or establish a registry for such values.</t>
@@ -90,12 +90,12 @@
     </section>
 
     <section anchor="Acknowledgements" title="Acknowledgements">
-      <t>This work has been a collaborative effort within the REFEDS and MACE
-      Dir communitieis. Special thanks to (in no order of appearance):<list
+      <t>This work has been a collaborative effort within the REFEDS and MACE-Dir
+        communities. Special thanks to (in no particular order):<list
           style="symbols">
-          <t>Bob 'RL' Morgan</t>
+          <t>RL 'Bob' Morgan</t>
 
-          <t>Ken Klingenstien</t>
+          <t>Ken Klingenstein</t>
 
           <t>Keith Hazelton</t>
 
@@ -105,7 +105,7 @@
 
           <t>Nicole Harris</t>
 
-          <t>Ian Young</t>
+          <t>Ian A. Young</t>
 
           <t>Tom Scavo</t>
         </list></t>
