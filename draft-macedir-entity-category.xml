@@ -88,46 +88,12 @@
         <xref target="SAML2MetadataAttr"/> metadata extension, in which the
         Attribute element is contained within an mdattr:EntityAttributes
         element directly contained within an md:Extensions element directly
-        contained within the entity's md:EntitiesDescriptor.
+        contained within the entity's md:EntityDescriptor.
         
         The meaning of the entity category attribute is undefined by this specification if it
         appears anywhere else within a metadata instance, or within any other XML document.
       </t>
 
-      <t>
-        [[Issue:  I removed the next paragraph because it seemed to me to
-        go much further in restricting the application of the underlying entity attributes
-        specification than is required for interoperability.  I see no evidence, for example,
-        that we aren't expecting anyone implementing <xref target="SAML2MetadataAttr"/>
-        to handle duplicate values, split across multiple Attribute elements.
-        I think I'd like to talk to
-        Scott about this before resolving this one.]]
-      </t>
-      <t>
-        [[Removed:
-        The entity category attribute MAY
-        contain multiple AttributeValue elements. A single EntityAttributes
-        element MUST NOT contain multiple separate Attribute elements for the
-        same attribute type and instead such cases MUST be represented as
-        multiple AttributeValue elements.]]
-      </t>
-
-      <t>
-        [[Issue: the <xref target="SAML2MetadataAttr"/> extension permits signed SAML
-        assertions within EntityAttributes elements associated with entities (as opposed
-        to with entity groups, where only Attribute values are permitted).  I'm not
-        sure how we should incorporate this aspect of the underlying specification.  The above
-        wording very carefully allows this, but perhaps not very obviously.
-        If we did intent to permit this, it has implications for the security section.
-        If we intended to disallow this, we'd need to say so.  My personal guess is that
-        we might want to say that this is something you SHOULD NOT do, as it's bound to
-        cause interoperability problems vs. "light" entity attribute implementations and
-        of course anything that's being passed from hand to hand a few times might find
-        out just how brittle XML signatures are...
-        Again, I think we need to get Scott's
-        input on this.]]
-      </t>
-      
     </section>
 
     <section title="Semantics">
@@ -177,19 +143,21 @@
 
     <section title="Example">
       <figure>
-        <artwork><![CDATA[<EntityDescriptor entityID="https://foo.example.com">
-  <Extensions>
-    <EntityAttributes>
-      <Attribute 
-         NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-         Name="http://macedir.org/entity-category">
-        <AttributeValue>urn:oid:4.7.1.1</AttributeValue>
-        <AttributeValue>https://f.example.org/foo</AttributeValue>
+        <artwork><![CDATA[<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+      entityID="https://service.example.com/entity">
+  <md:Extensions>
+    <mdattr:EntityAttributes
+        xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+      <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion"
+          NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+          Name="http://macedir.org/entity-category">
+        <AttributeValue>http://example.org/category/dog</AttributeValue>
+        <AttributeValue>urn:oid:1.3.6.1.4.1.21829</AttributeValue>
       </Attribute>
-    </EntityAttributes>
-  </Extensions>
+    </mdattr:EntityAttributes>
+  </md:Extensions>
   ...
-</EntityDescriptor>]]></artwork>
+</md:EntityDescriptor>]]></artwork>
       </figure>
     </section>
 
@@ -236,9 +204,8 @@
             assured by a digital signature.
           </t>
           <t>
-            [[If we're allowing for an attribute statement inside a signed SAML assertion inside
-            EntityAttributes, as well as just Attribute elements, then we'd want to say something
-            here about taking that signature into account.]]
+            If the entity category attribute is carried within a signed assertion, the assertion
+            itself must be evaluated.
           </t>
           <t>
             The procedures and policies of the immediate source of the metadata;
