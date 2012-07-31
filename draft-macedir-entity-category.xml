@@ -216,10 +216,11 @@
       <section title="Semantics">
         <t>
           The presence of the entity category support attribute within an entity's entity
-          attributes represents a series of self-asserted claims (one for each attribute
-          value) by the entity that it supports peer entities in a category in a particular
+          attributes represents a series of claims (one for each attribute
+          value) that the entity supports peer entities in a category in a particular
           fashion. The precise semantics of such a claim depend on the definition of the
           category support identifier itself.
+          Category support claims will often be defined to be self-asserted.
         </t>
         
         <t>
@@ -336,8 +337,8 @@
           </t>
         </list>
         <t>
-          The entity category support attribute is explicitly defined as a self-asserted
-          set of claims by the containing entity, but the provenance of the metadata remains
+          Although entity category support attribute values will often be defined as self-asserted
+          claims by the containing entity, the provenance of the metadata remains
           relevant to a relying party's decision to accept a claim of support as legitimate,
           and the specific definition of a support claim will influence the assurance
           required to act on it.
