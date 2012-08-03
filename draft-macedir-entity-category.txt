@@ -4,10 +4,10 @@
 Network Working Group                                           I. Young
 Internet-Draft                                                       UKf
 Intended status: Informational                         L. Johansson, Ed.
-Expires: September 29, 2012                                          NDN
+Expires: February 4, 2013                                            NDN
                                                                S. Cantor
                                                                Internet2
-                                                          March 28, 2012
+                                                          August 3, 2012
 
 
         The Entity Category SAML Entity Metadata Attribute Types
@@ -52,9 +52,9 @@ Abstract
 
 
 
-Young, et al.          Expires September 29, 2012               [Page 1]
+Young, et al.           Expires February 4, 2013                [Page 1]
 
-Internet-Draft               Entity Category                  March 2012
+Internet-Draft               Entity Category                 August 2012
 
 
 Requirements Language
@@ -78,7 +78,7 @@ Status of this Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on September 29, 2012.
+   This Internet-Draft will expire on February 4, 2013.
 
 Copyright Notice
 
@@ -108,9 +108,9 @@ Copyright Notice
 
 
 
-Young, et al.          Expires September 29, 2012               [Page 2]
+Young, et al.           Expires February 4, 2013                [Page 2]
 
-Internet-Draft               Entity Category                  March 2012
+Internet-Draft               Entity Category                 August 2012
 
 
    than English.
@@ -164,9 +164,9 @@ Internet-Draft               Entity Category                  March 2012
 
 
 
-Young, et al.          Expires September 29, 2012               [Page 3]
+Young, et al.           Expires February 4, 2013                [Page 3]
 
-Internet-Draft               Entity Category                  March 2012
+Internet-Draft               Entity Category                 August 2012
 
 
 1.  Introduction and Motivation
@@ -220,9 +220,9 @@ Internet-Draft               Entity Category                  March 2012
 
 
 
-Young, et al.          Expires September 29, 2012               [Page 4]
+Young, et al.           Expires February 4, 2013                [Page 4]
 
-Internet-Draft               Entity Category                  March 2012
+Internet-Draft               Entity Category                 August 2012
 
 
 2.  Entity Category Attribute
@@ -276,9 +276,9 @@ Internet-Draft               Entity Category                  March 2012
 
 
 
-Young, et al.          Expires September 29, 2012               [Page 5]
+Young, et al.           Expires February 4, 2013                [Page 5]
 
-Internet-Draft               Entity Category                  March 2012
+Internet-Draft               Entity Category                 August 2012
 
 
    o  A description of the anticipated uses for category membership by
@@ -332,9 +332,9 @@ Internet-Draft               Entity Category                  March 2012
 
 
 
-Young, et al.          Expires September 29, 2012               [Page 6]
+Young, et al.           Expires February 4, 2013                [Page 6]
 
-Internet-Draft               Entity Category                  March 2012
+Internet-Draft               Entity Category                 August 2012
 
 
 3.  Entity Category Support Attribute
@@ -388,9 +388,9 @@ Internet-Draft               Entity Category                  March 2012
 
 
 
-Young, et al.          Expires September 29, 2012               [Page 7]
+Young, et al.           Expires February 4, 2013                [Page 7]
 
-Internet-Draft               Entity Category                  March 2012
+Internet-Draft               Entity Category                 August 2012
 
 
    new version SHOULD be represented by a different category support
@@ -444,9 +444,9 @@ Internet-Draft               Entity Category                  March 2012
 
 
 
-Young, et al.          Expires September 29, 2012               [Page 8]
+Young, et al.           Expires February 4, 2013                [Page 8]
 
-Internet-Draft               Entity Category                  March 2012
+Internet-Draft               Entity Category                 August 2012
 
 
 4.  Acknowledgements
@@ -500,9 +500,9 @@ Internet-Draft               Entity Category                  March 2012
 
 
 
-Young, et al.          Expires September 29, 2012               [Page 9]
+Young, et al.           Expires February 4, 2013                [Page 9]
 
-Internet-Draft               Entity Category                  March 2012
+Internet-Draft               Entity Category                 August 2012
 
 
 5.  IANA Considerations
@@ -556,9 +556,9 @@ Internet-Draft               Entity Category                  March 2012
 
 
 
-Young, et al.          Expires September 29, 2012              [Page 10]
+Young, et al.           Expires February 4, 2013               [Page 10]
 
-Internet-Draft               Entity Category                  March 2012
+Internet-Draft               Entity Category                 August 2012
 
 
 6.  Security Considerations
@@ -612,9 +612,9 @@ Internet-Draft               Entity Category                  March 2012
 
 
 
-Young, et al.          Expires September 29, 2012              [Page 11]
+Young, et al.           Expires February 4, 2013               [Page 11]
 
-Internet-Draft               Entity Category                  March 2012
+Internet-Draft               Entity Category                 August 2012
 
 
 7.  Normative References
@@ -668,9 +668,9 @@ Internet-Draft               Entity Category                  March 2012
 
 
 
-Young, et al.          Expires September 29, 2012              [Page 12]
+Young, et al.           Expires February 4, 2013               [Page 12]
 
-Internet-Draft               Entity Category                  March 2012
+Internet-Draft               Entity Category                 August 2012
 
 
 Authors' Addresses
@@ -724,5 +724,5 @@ Authors' Addresses
 
 
 
-Young, et al.          Expires September 29, 2012              [Page 13]
+Young, et al.           Expires February 4, 2013               [Page 13]
 
